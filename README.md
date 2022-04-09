@@ -34,7 +34,11 @@ iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/in
 ------>  youtube-dl -ciw -f mp4 https://www.youtube.com/playlist?list=PLv3TTBr1W_9tppikBxAE_G6qjWdBljBHJ -o "%(playlist_index)s %(title)s.%(ext)s"
 --- 3. to extract audio from video
 ------>  youtube-dl -ciw --extract-audio --audio-format mp3 --audio-quality 0 https://www.youtube.com/watch?v=dQw4w9WgXcQ -o "%(title)s.%(ext)s"
---- 4. to download with specific subtitle
+--- 4. to Download Youtube videos with subtitles
+------>  youtube-dl --write-auto-sub https://www.youtube.com/watch?v=VN0XWMo3ugY
+--- 5. to download with specific subtitle
 ------>  youtube-dl --write-srt --sub-lang en https://www.youtube.com/watch?v=VN0XWMo3ugY
---- 5. to download with multiple subtitle langage
+--- 6. to download with multiple subtitle langage
 ------>  youtube-dl --write-srt --sub-lang "en,fr" https://www.youtube.com/watch?v=VN0XWMo3ugY
+--- 7. to Download Youtube videos without subtitles
+------>  youtube-dl https://www.youtube.com/watch?v=VN0XWMo3ugY
